@@ -120,7 +120,7 @@ $(function() {
 
         beforeEach(function(done) {
             // Had to change default timeout interval due to occasional long async requests
-            jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+            jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
             // Call loadFeed with the second feed and the done callback
             loadFeed(1, done);
             // Save this feed's content
