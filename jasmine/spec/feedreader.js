@@ -100,6 +100,8 @@ $(function() {
          */
          // Use beforeEach for async
          beforeEach(function(done) {
+            // Had to change default timeout interval due to occasional long async requests
+            jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
             // Call loadFeed with the first feed and the done callback
             loadFeed(0, done);
          });
